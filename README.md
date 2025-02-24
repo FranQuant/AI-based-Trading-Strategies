@@ -1,6 +1,6 @@
 # AI-based Trading Strategies
 
-This repository presents a comprehensive framework for developing AI-driven trading strategies focusing on systematic risk premia and advanced asset allocation. It integrates state-of-the-art machine learning techniques with quantitative finance methodologies to create, validate, and backtest trading signals.
+This repository presents a comprehensive framework for developing AI-driven trading strategies focusing on systematic risk premia. It integrates state-of-the-art machine learning techniques with quantitative finance methodologies to create, validate, and backtest trading signals.
 
 ## Description:  
 
@@ -48,31 +48,27 @@ The project is built using Python 3.8+ and relies on several key libraries. To s
 1. Clone the repository:
 
 git clone https://github.com/FranQuant/AI-based-Trading-Strategies.git
+
 cd AI-based-Trading-Strategies
 
 2. Set up a virtual environment (optional but recommended):
 
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+
+source venv/bin/activate  
 
 3. Install dependencies:
 
 pip install -r requirements.txt
 
-Contributing
+## Contributing
 Contributions are welcome! If you have ideas for improvements, please feel free to open an issue or submit a pull request. When contributing, please adhere to the repository’s coding style and document any changes for clarity.
 
-License
+## License
 This project is licensed under the MIT License.
 
 
-## Repository Structure
 
-├── data/                   # Datasets for training, validation, and testing
-├── docs/                   # Project documentation and presentations
-├── notebooks/              # Jupyter notebooks for exploratory analysis and model prototyping
-├── requirements.txt        # List of Python dependencies
-└── README.md               # Project overview and instructions
 
 
 
