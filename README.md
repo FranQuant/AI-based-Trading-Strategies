@@ -7,6 +7,16 @@ This repository presents a comprehensive framework for developing AI-driven trad
 This project deploys a systematic, AI-driven framework to develop and evaluate quantitative trading strategies. Our modular pipeline integrates robust API-based data acquisition with advanced feature engineering—including regime detection via Hidden Markov Models—to produce high-quality inputs for our models. We implement a suite of deep learning architectures, including a GRU, a standalone LSTM model, and an LSTM-CNN hybrid, all validated through rolling cross-validation and realistic backtesting that incorporates transaction cost adjustments. Performance is benchmarked against a buy-and-hold baseline, and the framework supports rapid experimentation with alternative architectures such as LSTM with attention mechanisms and transformers. 
 
 
+## Neural Networks for Trading Strategies
+
+Neural networks (NNs) have been widely adopted in trading strategies due to their ability to model nonlinear relationships, detect patterns, and adapt to changing market conditions. The evolution of deep learning architectures, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformer-based models, has further enhanced their predictive power. NNs have revolutionized trading by enhancing prediction accuracy, optimizing execution, and identifying alpha signals in ways that traditional methods cannot. However, challenges such as interpretability, overfitting, and computational cost must be addressed for robust deployment.
+
+Long Short-Term Memory (LSTM) networks are a specialized type of RNNs designed to handle sequential data and long-term dependencies—making them particularly well-suited for financial time-series forecasting and trading strategies. LSTMs are a powerful tool for time-series forecasting and trading, but they require careful tuning and robust validation. With recent advancements in deep learning, transformer architectures have proven highly effective in time-series forecasting, outperforming LSTMs and traditional statistical models.
+
+#### LSTM with Attention-Based Trading Strategy
+
+Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data.
+
 ## Overview
 
 The project explores the intersection of artificial intelligence and financial markets by:
@@ -17,7 +27,7 @@ The project explores the intersection of artificial intelligence and financial m
 
 ## Motivation
 
-The financial landscape is increasingly driven by data and algorithmic decision-making. By combining AI with quantitative finance, this project aims to:
+Data and algorithmic decision-making increasingly drive the financial landscape. By combining AI with quantitative finance, this project aims to:
 - Enhance signal detection in noisy market environments.
 - Optimize asset allocation and risk management.
 - Provide a reproducible framework for testing and refining trading strategies.
@@ -42,29 +52,36 @@ The financial landscape is increasingly driven by data and algorithmic decision-
 - Development of systematic trading strategies incorporating risk management (e.g., stop-loss, position sizing).
 - Backtesting the strategies over historical periods to assess performance metrics such as Sharpe ratio, maximum drawdown, and cumulative returns.
 
+  
+4. Evaluation & Performance Review
+- Visualization of Results. 
+- Use QuantStats to generate: Cumulative returns plots, Drawdown analysis, Rolling Sharpe ratio plots, etc...
+- Compare the strategy performance against benchmarks to determine if the model adds value. 
+
 ## Installation & Requirements
+
 The project is built using Python 3.8+ and relies on several key libraries. To set up the environment:
 
 1. Clone the repository:
 
 git clone https://github.com/FranQuant/AI-based-Trading-Strategies.git
 
-cd AI-based-Trading-Strategies
 
 2. Set up a virtual environment (optional but recommended):
 
 python -m venv venv
-
-source venv/bin/activate  
+ 
 
 3. Install dependencies:
 
 pip install -r requirements.txt
 
 ## Contributing
+
 Contributions are welcome! If you have ideas for improvements, please feel free to open an issue or submit a pull request. When contributing, please adhere to the repository’s coding style and document any changes for clarity.
 
 ## License
+
 This project is licensed under the MIT License.
 
 
