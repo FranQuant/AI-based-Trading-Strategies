@@ -1,4 +1,4 @@
-# AI-based Trading Strategies
+# AI-based Trading Strategies: Comparing Deep Learning Architectures
 
 This repository presents a comprehensive framework for developing AI-driven trading strategies focusing on systematic risk premia. It integrates state-of-the-art machine learning techniques with quantitative finance methodologies to create, validate, and backtest trading signals.
 
