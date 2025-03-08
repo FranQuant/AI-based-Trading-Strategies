@@ -15,7 +15,7 @@ Long Short-Term Memory (LSTM) networks are a specialized type of RNNs designed t
 
 #### LSTM with Attention-Based Trading Strategy
 
-Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data.
+Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data. This attention-based framework also opens promising avenues for systematic exploration in asset allocation strategies, enabling dynamic weighting of assets informed by adaptive market regime detection.
 
 ## Overview
 
