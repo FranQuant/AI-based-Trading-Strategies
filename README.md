@@ -63,19 +63,19 @@ Data and algorithmic decision-making increasingly drive the financial landscape.
 The project is built using Python 3.8+ and relies on several key libraries. To set up the environment:
 
 1. Clone the repository:
-
+```
 git clone https://github.com/FranQuant/AI-based-Trading-Strategies.git
-
+```
 
 2. Set up a virtual environment (optional but recommended):
-
+```
 python -m venv venv
- 
+ ```
 
 3. Install dependencies:
-
+```
 pip install -r requirements.txt
-
+```
 ## Contributing
 
 Contributions are welcome! If you have ideas for improvements, please feel free to open an issue or submit a pull request. When contributing, please adhere to the repository’s coding style and document any changes for clarity.
