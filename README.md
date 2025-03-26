@@ -23,12 +23,12 @@ AI-based-Trading-Strategies/
 │   ├── env_comparison.yml         # vectorbt and reporting
 │
 ├── notebooks/
-│   ├── LSTM_model.ipynb
-│   ├── GRU_model.ipynb
-│   ├── CNN_LSTM_model.ipynb
-│   ├── ATT_LSTM_model.ipynb
-│   ├── Transformer_model.ipynb
-│   ├── compare_models_vectorbt.ipynb  
+│   ├── 01_LSTM_model.ipynb
+│   ├── 02_GRU_model.ipynb
+│   ├── 03_CNN_LSTM_model.ipynb
+│   ├── 04_ATT_LSTM_model.ipynb
+│   ├── 05_Transformer_model.ipynb
+│   ├── 06_compare_models_vectorbt.ipynb  
 │
 ├── data/
 │   ├── df_lstm.csv
@@ -37,6 +37,17 @@ AI-based-Trading-Strategies/
 │   ├── df_att.csv
 │   ├── df_trans.csv
 │   ├── GSPC_fixed.csv              
+│
+├── outputs/
+│   ├── correlation_heatmaps.png
+│   ├── cumulative_returns.png
+│   ├── fold_metrics.csv
+│   ├── metrics_bar_plot.png
+│   ├── model_comparison_summary.csv
+│   ├── rolling_sharpes.csv
+│   ├── rolling_sharpe_all_models.png
+│   ├── signal_activity_count.png
+│   ├── transaction_cost_sensitivity.png
 │
 ├── README.md
 ├── requirements.txt
