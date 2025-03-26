@@ -1,0 +1,16 @@
+#Ignore Python-related
+__pycache__/
+*.py[cod]
+
+# Ignore Jupyter checkpoints
+.ipynb_checkpoints/
+
+# Ignore system files
+.DS_Store
+
+# Ignore saved models (optional)
+*.keras
+
+# Ignore env files
+.env
+
