@@ -13,6 +13,37 @@ Special thanks to **[EODHD](https://eodhistoricaldata.com/financial-apis/)** for
 This project deploys a systematic, AI-driven framework to develop and evaluate quantitative trading strategies. Our modular pipeline integrates robust API-based data acquisition with advanced feature engineering—including regime detection via Hidden Markov Models—to produce high-quality inputs for our models. We implement a suite of deep learning architectures, including a GRU, a standalone LSTM model, and an LSTM-CNN hybrid, all validated through rolling cross-validation and realistic backtesting that incorporates transaction cost adjustments. Performance is benchmarked against a buy-and-hold baseline, and the framework supports rapid experimentation with alternative architectures such as LSTM with attention mechanisms and transformers. 
 
 
+## Project Structure
+
+AI-based-Trading-Strategies/
+│
+├── envs/
+│   ├── env_models_simple.yml      # LSTM, GRU, CNN-LSTM
+│   ├── env_models_tf.yml          # Attention LSTM, Transformer
+│   ├── env_comparison.yml         # vectorbt and reporting
+│
+├── notebooks/
+│   ├── LSTM_model.ipynb
+│   ├── GRU_model.ipynb
+│   ├── CNN_LSTM_model.ipynb
+│   ├── ATT_LSTM_model.ipynb
+│   ├── Transformer_model.ipynb
+│   ├── compare_models_vectorbt.ipynb  
+│
+├── data/
+│   ├── df_lstm.csv
+│   ├── df_gru.csv
+│   ├── df_cnn.csv
+│   ├── df_att.csv
+│   ├── df_trans.csv
+│   ├── GSPC_fixed.csv              
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+
+
+
 ## Neural Networks for Trading Strategies
 
 Neural networks (NNs) have been widely adopted in trading strategies due to their ability to model nonlinear relationships, detect patterns, and adapt to changing market conditions. The evolution of deep learning architectures, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformer-based models, has further enhanced their predictive power. NNs have revolutionized trading by enhancing prediction accuracy, optimizing execution, and identifying alpha signals in ways that traditional methods cannot. However, challenges such as interpretability, overfitting, and computational cost must be addressed for robust deployment.
