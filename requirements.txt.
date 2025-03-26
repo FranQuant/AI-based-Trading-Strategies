@@ -1,0 +1,28 @@
+# TensorFlow 2.4+ is required for running LSTM with Attention Mechanism and Transformers
+tensorflow>=2.4
+
+# Core scientific computing libraries
+numpy
+pandas
+scipy
+
+# Data visualization
+matplotlib
+seaborn
+
+# Machine learning libraries
+scikit-learn
+hmmlearn
+
+# Backtesting and trading strategy evaluation
+quantstats
+
+# Hyperparameter optimization
+optuna
+
+# Jupyter environment for running notebooks
+jupyterlab
+
+# Additional utilities
+requests
+logging
