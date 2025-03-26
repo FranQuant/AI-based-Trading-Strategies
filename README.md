@@ -14,7 +14,7 @@ This project deploys a systematic, AI-driven framework to develop and evaluate q
 
 
 ## Project Structure
-
+```
 AI-based-Trading-Strategies/
 │
 ├── envs/
@@ -41,7 +41,7 @@ AI-based-Trading-Strategies/
 ├── README.md
 ├── requirements.txt
 └── .gitignore
-
+```
 
 
 ## Neural Networks for Trading Strategies
