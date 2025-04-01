@@ -1,18 +1,17 @@
 # AI-based Trading Strategies: Comparing Deep Learning Architectures
+This repository presents a structured framework for developing and evaluating AI-driven trading strategies, with a focus on **systematic risk premia**. The project integrates cutting-edge deep learning architectures with robust backtesting and interpretability tools — all within a modular and extensible research pipeline.
 
-This repository presents a comprehensive framework for developing AI-driven trading strategies focusing on systematic risk premia. It integrates state-of-the-art machine learning techniques with quantitative finance methodologies to create, validate, and backtest trading signals.
 
 ## Data Source
-
 This project utilizes historical market data obtained through the **[EODHD APIs](https://eodhistoricaldata.com/financial-apis/)**. Their high-quality financial data has been instrumental in developing and testing AI-based trading strategies.
 
-Special thanks to **[EODHD](https://eodhistoricaldata.com/financial-apis/)** for supporting this research.
 
-## Description:  
-
+## Description:
 This project deploys a systematic, AI-driven framework to develop and evaluate quantitative trading strategies. Our modular pipeline integrates robust API-based data acquisition with advanced feature engineering—including regime detection via Hidden Markov Models—to produce high-quality inputs for our models. We implement a suite of deep learning architectures, including a GRU, a standalone LSTM model, and an LSTM-CNN hybrid, all validated through rolling cross-validation and realistic backtesting that incorporates transaction cost adjustments. Performance is benchmarked against a buy-and-hold baseline, and the framework supports rapid experimentation with alternative architectures such as LSTM with attention mechanisms and transformers. 
 
+This project builds an end-to-end pipeline for evaluating deep learning models in financial markets. It includes:
 
+<<<<<<< HEAD
 ## Project Structure
 ```
 AI-based-Trading-Strategies/
@@ -53,6 +52,16 @@ AI-based-Trading-Strategies/
 ├── requirements.txt
 └── .gitignore
 ```
+=======
+- **API-driven data ingestion**
+- **Feature engineering** (including regime detection using Hidden Markov Models)
+- **Multi-architecture model experimentation** (GRU, LSTM, CNN-LSTM, Attention LSTM, Transformers)
+- **Rolling-window validation and realistic backtesting**
+- **Transaction cost sensitivity, risk-adjusted metrics, and hybrid overlays**
+- **Explainability via attention weights and strategy diagnostics**
+
+The final deliverable includes a strategy-ready version and a hybrid attention-based allocation prototype for future AI+XAI asset management models.
+>>>>>>> 4a0b59f (Final AIIFC 2025 push: Clean notebooks, envs, data, updated README)
 
 
 ## Neural Networks for Trading Strategies
@@ -61,68 +70,118 @@ Neural networks (NNs) have been widely adopted in trading strategies due to thei
 
 Long Short-Term Memory (LSTM) networks are a specialized type of RNNs designed to handle sequential data and long-term dependencies—making them particularly well-suited for financial time-series forecasting and trading strategies. LSTMs are a powerful tool for time-series forecasting and trading, but they require careful tuning and robust validation. With recent advancements in deep learning, transformer architectures have proven highly effective in time-series forecasting, outperforming LSTMs and traditional statistical models.
 
+Deep learning models enable systematic strategies to:
+- Capture **non-linear relationships**
+- Detect **regime shifts** and **volatility clusters**
+- Generate adaptive **position sizing signals**
+
+This project uses:
+- **LSTM** for sequential modeling  
+- **GRU** as a compact alternative  
+- **CNN-LSTM** for local-global patterns  
+- **Attention-LSTM** for interpretable dynamics  
+- **Transformers** for end-to-end forecasting  
+
 #### LSTM with Attention-Based Trading Strategy
 
 Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data. This attention-based framework also opens promising avenues for systematic exploration in asset allocation strategies, enabling dynamic weighting of assets informed by adaptive market regime detection.
 
-## Overview
+> Strategy performance is benchmarked with vectorbt and adjusted for transaction costs. Attention mechanisms are further analyzed for signal interpretability and allocation logic.
 
-The project explores the intersection of artificial intelligence and financial markets by:
-- **Identifying risk premia:** Leveraging historical market data to capture systematic risk factors.
-- **Building predictive models:** Utilizing machine learning algorithms (e.g., neural networks) to forecast asset returns.
-- **Constructing trading strategies:** Translating predictive insights into actionable trading signals.
-- **Backtesting performance:** Evaluating the robustness of strategies through rigorous historical simulations that account for transaction costs and risk metrics.
+---
+
+
+## Project Structure
+```
+AI-based-Trading-Strategies/
+│
+├── envs/
+│   ├── env_models_simple.yml            # LSTM, GRU, CNN-LSTM
+│   ├── env_models_tf.yml                # Attention LSTM, Transformer
+│   ├── env_comparison.yml               # vectorbt and reporting
+│
+├── notebooks/
+│   ├── LSTM_model.ipynb                             # LSTM model baseline
+│   ├── GRU_model.ipynb                              # GRU model
+│   ├── CNN_LSTM_model.ipynb                         # CNN-LSTM hybrid
+│   ├── ATT_LSTM_model.ipynb                         # Attention-based LSTM
+│   ├── Transformer_model.ipynb                      # Transformer forecaster
+│   ├── Full_Strategy_Clean_Baseline.ipynb           # Backtest pipeline with vectorbt
+│   ├── 07_Strategy_Enhancements_Sensitivity.ipynb   # Holding period, vol sizing, stop-loss overlays
+│   ├── 08_Hybrid_Attention_Allocation.ipynb         # Attention-based dynamic allocation strategy
+│
+├── data/
+│   ├── df_lstm.csv
+│   ├── df_gru.csv
+│   ├── df_cnn.csv
+│   ├── df_att.csv
+│   ├── df_trans.csv
+│   ├── GSPC_fixed.csv
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+
+| Notebook Filename                             | # | Purpose / Description                              |
+|----------------------------------------------|--|----------------------------------------------------|
+| 01_LSTM_model_template.ipynb                  | 01 | Baseline LSTM                                      |
+| 02_GRU_model_template.ipynb                   | 02 | GRU architecture                                   |
+| 03_CNN_LSTM_model_template.ipynb              | 03 | CNN-LSTM hybrid                                    |
+| 04_ATT_LSTM_model_template.ipynb              | 04 | LSTM with attention layer                          |
+| 04_ATT_LSTM_model_attention_weights.ipynb     | 04b| Attention score extraction                         |
+| 05_Transformer_model_template.ipynb           | 05 | Transformer-based forecaster                       |
+| 06_Full_Strategy_Clean_Baseline.ipynb         | 06 | Vectorbt backtesting pipeline                      |
+| 07_Strategy_Enhancements_Sensitivity.ipynb    | 07 | Realism overlays: min-hold, vol sizing, stop-loss |
+| 08_Hybrid_Attention_Allocation.ipynb          | 08 | Attention-driven dynamic asset allocation         |
+
+
+## Highlight: Attention-Based Allocation
+
+This framework goes beyond signal generation — it shows how attention weights can be used for **interpretable, dynamic asset allocation**, bypassing traditional optimizers (e.g., covariance matrix inversion). It paves the way for **explainable AI (XAI)** in portfolio construction.
+
+
 
 ## Motivation
 
-Data and algorithmic decision-making increasingly drive the financial landscape. By combining AI with quantitative finance, this project aims to:
-- Enhance signal detection in noisy market environments.
-- Optimize asset allocation and risk management.
-- Provide a reproducible framework for testing and refining trading strategies.
-- Contribute to the evolving research in systematic risk premia and machine learning-based investment strategies.
+This research aims to bridge AI interpretability and portfolio realism, contributing to the next generation of systematic strategies:
+
+- Enhanced forecasting in noisy environments
+- Smarter, cost-aware execution
+- Modular testing of AI-based allocation models
 
 ## Methodology
-1. Data Collection & Preprocessing:
+## 📌 Methodology Overview
 
-- Aggregation of historical market data (prices, volumes, macroeconomic indicators).
-- Cleaning and normalization of raw data.
-- Feature engineering to extract relevant predictors for risk premia analysis.
+1. **Data Collection & Preprocessing**  
+   - EODHD APIs for historical prices  
+   - Normalization and cleaning  
+   - Regime-based labeling
 
-2. Model Development:
+2. **Model Development**  
+   - Model training (LSTM, GRU, CNN-LSTM, etc.)  
+   - Cross-validation and performance tracking
 
-- Implementation of various machine learning models to forecast returns.
-- Use of hyperparameter tuning and cross-validation to optimize model performance.
-- Comparative analysis of models based on predictive accuracy and risk-adjusted performance.
+3. **Strategy Construction**  
+   - Convert predictions to trading signals  
+   - Apply overlays (stop-loss, volatility sizing, hybrid constraints)
 
-3. Strategy Construction & Backtesting:
-
-- Generation of trading signals from model outputs.
-- Development of systematic trading strategies incorporating risk management (e.g., stop-loss, position sizing).
-- Backtesting the strategies over historical periods to assess performance metrics such as Sharpe ratio, maximum drawdown, and cumulative returns.
-
-  
-4. Evaluation & Performance Review
-- Visualization of Results. 
-- Use QuantStats to generate: Cumulative returns plots, Drawdown analysis, Rolling Sharpe ratio plots, etc...
-- Compare the strategy performance against benchmarks to determine if the model adds value. 
-
+4. **Backtesting & Evaluation**  
+   - Use `vectorbt`, QuantStats, and Sharpe sensitivity  
+   - Visualize performance: cumulative return, drawdown, signal frequency
+   - 
 ## Installation & Requirements
 
-The project is built using Python 3.8+ and relies on several key libraries. To set up the environment:
+The project is built using Python 3.8+ and relies on several key libraries. To set up the environment, clone the repo and install dependencies:
 
-1. Clone the repository:
+Clone the repository:
 ```
 git clone https://github.com/FranQuant/AI-based-Trading-Strategies.git
-```
-
-2. Set up a virtual environment (optional but recommended):
-```
-python -m venv venv
- ```
-
-3. Install dependencies:
-```
+cd AI-based-Trading-Strategies
 pip install -r requirements.txt
+```
+
 ```
 ## Contributing
 
