@@ -11,48 +11,6 @@ This project deploys a systematic, AI-driven framework to develop and evaluate q
 
 This project builds an end-to-end pipeline for evaluating deep learning models in financial markets. It includes:
 
-<<<<<<< HEAD
-## Project Structure
-```
-AI-based-Trading-Strategies/
-│
-├── envs/
-│   ├── env_models_simple.yml      # LSTM, GRU, CNN-LSTM
-│   ├── env_models_tf.yml          # Attention LSTM, Transformer
-│   ├── env_comparison.yml         # vectorbt and reporting
-│
-├── notebooks/
-│   ├── 01_LSTM_model.ipynb
-│   ├── 02_GRU_model.ipynb
-│   ├── 03_CNN_LSTM_model.ipynb
-│   ├── 04_ATT_LSTM_model.ipynb
-│   ├── 05_Transformer_model.ipynb
-│   ├── 06_compare_models_vectorbt.ipynb  
-│
-├── data/
-│   ├── df_lstm.csv
-│   ├── df_gru.csv
-│   ├── df_cnn.csv
-│   ├── df_att.csv
-│   ├── df_trans.csv
-│   ├── GSPC_fixed.csv              
-│
-├── outputs/
-│   ├── correlation_heatmaps.png
-│   ├── cumulative_returns.png
-│   ├── fold_metrics.csv
-│   ├── metrics_bar_plot.png
-│   ├── model_comparison_summary.csv
-│   ├── rolling_sharpes.csv
-│   ├── rolling_sharpe_all_models.png
-│   ├── signal_activity_count.png
-│   ├── transaction_cost_sensitivity.png
-│
-├── README.md
-├── requirements.txt
-└── .gitignore
-```
-=======
 - **API-driven data ingestion**
 - **Feature engineering** (including regime detection using Hidden Markov Models)
 - **Multi-architecture model experimentation** (GRU, LSTM, CNN-LSTM, Attention LSTM, Transformers)
@@ -61,11 +19,9 @@ AI-based-Trading-Strategies/
 - **Explainability via attention weights and strategy diagnostics**
 
 The final deliverable includes a strategy-ready version and a hybrid attention-based allocation prototype for future AI+XAI asset management models.
->>>>>>> 4a0b59f (Final AIIFC 2025 push: Clean notebooks, envs, data, updated README)
 
 
 ## Neural Networks for Trading Strategies
-
 Neural networks (NNs) have been widely adopted in trading strategies due to their ability to model nonlinear relationships, detect patterns, and adapt to changing market conditions. The evolution of deep learning architectures, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformer-based models, has further enhanced their predictive power. NNs have revolutionized trading by enhancing prediction accuracy, optimizing execution, and identifying alpha signals in ways that traditional methods cannot. However, challenges such as interpretability, overfitting, and computational cost must be addressed for robust deployment.
 
 Long Short-Term Memory (LSTM) networks are a specialized type of RNNs designed to handle sequential data and long-term dependencies—making them particularly well-suited for financial time-series forecasting and trading strategies. LSTMs are a powerful tool for time-series forecasting and trading, but they require careful tuning and robust validation. With recent advancements in deep learning, transformer architectures have proven highly effective in time-series forecasting, outperforming LSTMs and traditional statistical models.
@@ -83,13 +39,9 @@ This project uses:
 - **Transformers** for end-to-end forecasting  
 
 #### LSTM with Attention-Based Trading Strategy
-
 Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data. This attention-based framework also opens promising avenues for systematic exploration in asset allocation strategies, enabling dynamic weighting of assets informed by adaptive market regime detection.
 
 > Strategy performance is benchmarked with vectorbt and adjusted for transaction costs. Attention mechanisms are further analyzed for signal interpretability and allocation logic.
-
----
-
 
 ## Project Structure
 ```
@@ -138,13 +90,11 @@ AI-based-Trading-Strategies/
 
 
 ## Highlight: Attention-Based Allocation
-
 This framework goes beyond signal generation — it shows how attention weights can be used for **interpretable, dynamic asset allocation**, bypassing traditional optimizers (e.g., covariance matrix inversion). It paves the way for **explainable AI (XAI)** in portfolio construction.
 
 
 
 ## Motivation
-
 This research aims to bridge AI interpretability and portfolio realism, contributing to the next generation of systematic strategies:
 
 - Enhanced forecasting in noisy environments
@@ -170,7 +120,8 @@ This research aims to bridge AI interpretability and portfolio realism, contribu
 4. **Backtesting & Evaluation**  
    - Use `vectorbt`, QuantStats, and Sharpe sensitivity  
    - Visualize performance: cumulative return, drawdown, signal frequency
-   - 
+
+     
 ## Installation & Requirements
 
 The project is built using Python 3.8+ and relies on several key libraries. To set up the environment, clone the repo and install dependencies:
