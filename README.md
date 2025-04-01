@@ -133,7 +133,6 @@ cd AI-based-Trading-Strategies
 pip install -r requirements.txt
 ```
 
-```
 ## Contributing
 
 Contributions are welcome! If you have ideas for improvements, please feel free to open an issue or submit a pull request. When contributing, please adhere to the repository’s coding style and document any changes for clarity.
