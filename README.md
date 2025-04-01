@@ -1,6 +1,8 @@
 # AI-based Trading Strategies: Comparing Deep Learning Architectures
 
+### Clean Strategy Comparison
 ![Clean Strategy Comparison](presentation_assets/1_clean_strategy_comparison.png)
+
 
 
 This repository presents a structured framework for developing and evaluating AI-driven trading strategies, with a focus on **systematic risk premia**. The project integrates cutting-edge deep learning architectures with robust backtesting and interpretability tools — all within a modular and extensible research pipeline.
@@ -30,6 +32,9 @@ Neural networks (NNs) have been widely adopted in trading strategies due to thei
 
 Long Short-Term Memory (LSTM) networks are a specialized type of RNNs designed to handle sequential data and long-term dependencies—making them particularly well-suited for financial time-series forecasting and trading strategies. LSTMs are a powerful tool for time-series forecasting and trading, but they require careful tuning and robust validation. With recent advancements in deep learning, transformer architectures have proven highly effective in time-series forecasting, outperforming LSTMs and traditional statistical models.
 
+### Transformer vs SPY Benchmark
+![Transformer vs SPY Benchmark](presentation_assets/6_cumulative_performance_transformer_vs_benchmark.png)
+
 Deep learning models enable systematic strategies to:
 - Capture **non-linear relationships**
 - Detect **regime shifts** and **volatility clusters**
@@ -40,7 +45,10 @@ This project uses:
 - **GRU** as a compact alternative  
 - **CNN-LSTM** for local-global patterns  
 - **Attention-LSTM** for interpretable dynamics  
-- **Transformers** for end-to-end forecasting  
+- **Transformers** for end-to-end forecasting
+
+### Attention-LSTM vs SPY Benchmark
+![Attention-LSTM vs SPY Benchmark](presentation_assets/6_cumulative_performance_attention_lstm_vs_benchmark.png)
 
 #### LSTM with Attention-Based Trading Strategy
 Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data. This attention-based framework also opens promising avenues for systematic exploration in asset allocation strategies, enabling dynamic weighting of assets informed by adaptive market regime detection.
