@@ -47,11 +47,14 @@ This project uses:
 - **Attention-LSTM** for interpretable dynamics  
 - **Transformers** for end-to-end forecasting
 
-### Attention-LSTM vs SPY Benchmark
-![Attention-LSTM vs SPY Benchmark](presentation_assets/6_cumulative_performance_attention_lstm_vs_benchmark.png)
 
 #### LSTM with Attention-Based Trading Strategy
 Our approach leverages a state-of-the-art deep learning architecture that combines the sequential modeling strengths of LSTM networks with an attention mechanism designed to isolate and weigh the most predictive segments of historical market data. This attention-based framework also opens promising avenues for systematic exploration in asset allocation strategies, enabling dynamic weighting of assets informed by adaptive market regime detection.
+
+
+### Attention-LSTM vs SPY Benchmark
+![Attention-LSTM vs SPY Benchmark](presentation_assets/6_cumulative_performance_attention_lstm_vs_benchmark.png)
+
 
 > Strategy performance is benchmarked with vectorbt and adjusted for transaction costs. Attention mechanisms are further analyzed for signal interpretability and allocation logic.
 
