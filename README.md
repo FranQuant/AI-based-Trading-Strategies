@@ -63,19 +63,20 @@ Our approach leverages a state-of-the-art deep learning architecture that combin
 AI-based-Trading-Strategies/
 │
 ├── envs/
-│   ├── env_models_simple.yml            # LSTM, GRU, CNN-LSTM
-│   ├── env_models_tf.yml                # Attention LSTM, Transformer
-│   ├── env_comparison.yml               # vectorbt and reporting
+│   ├── env_models_simple.yml        # LSTM, GRU, CNN-LSTM
+│   ├── env_models_tf.yml            # Attention LSTM, Transformer
+│   └── env_comparison.yml           # vectorbt and reporting
 │
 ├── notebooks/
-│   ├── LSTM_model.ipynb                             # LSTM model baseline
-│   ├── GRU_model.ipynb                              # GRU model
-│   ├── CNN_LSTM_model.ipynb                         # CNN-LSTM hybrid
-│   ├── ATT_LSTM_model.ipynb                         # Attention-based LSTM
-│   ├── Transformer_model.ipynb                      # Transformer forecaster
-│   ├── Full_Strategy_Clean_Baseline.ipynb           # Backtest pipeline with vectorbt
-│   ├── 07_Strategy_Enhancements_Sensitivity.ipynb   # Holding period, vol sizing, stop-loss overlays
-│   ├── 08_Hybrid_Attention_Allocation.ipynb         # Attention-based dynamic allocation strategy
+│   ├── 01_LSTM_model_template.ipynb                 # Baseline LSTM model
+│   ├── 02_GRU_model_template.ipynb                  # GRU architecture
+│   ├── 03_CNN_LSTM_model_template.ipynb             # CNN-LSTM hybrid
+│   ├── 04_ATT_LSTM_model_template.ipynb             # LSTM with attention layer
+│   ├── 04_ATT_LSTM_model_attention_weights.ipynb    # Attention score extraction
+│   ├── 05_Transformer_model_template.ipynb          # Transformer-based forecaster
+│   ├── 06_Full_Strategy_Clean_Baseline.ipynb        # vectorbt backtesting pipeline
+│   ├── 07_Strategy_Enhancements_Sensitivity.ipynb   # Realism overlays: min-hold, vol sizing, stop-loss
+│   └── 08_Hybrid_Attention_Allocation.ipynb         # Attention-driven dynamic asset allocation
 │
 ├── data/
 │   ├── df_lstm.csv
@@ -83,26 +84,13 @@ AI-based-Trading-Strategies/
 │   ├── df_cnn.csv
 │   ├── df_att.csv
 │   ├── df_trans.csv
-│   ├── GSPC_fixed.csv
+│   └── GSPC_fixed.csv
 │
 ├── README.md
 ├── requirements.txt
 └── .gitignore
+
 ```
-
-
-| Notebook Filename                             | # | Purpose / Description                              |
-|----------------------------------------------|--|----------------------------------------------------|
-| 01_LSTM_model_template.ipynb                  | 01 | Baseline LSTM                                      |
-| 02_GRU_model_template.ipynb                   | 02 | GRU architecture                                   |
-| 03_CNN_LSTM_model_template.ipynb              | 03 | CNN-LSTM hybrid                                    |
-| 04_ATT_LSTM_model_template.ipynb              | 04 | LSTM with attention layer                          |
-| 04_ATT_LSTM_model_attention_weights.ipynb     | 04b| Attention score extraction                         |
-| 05_Transformer_model_template.ipynb           | 05 | Transformer-based forecaster                       |
-| 06_Full_Strategy_Clean_Baseline.ipynb         | 06 | Vectorbt backtesting pipeline                      |
-| 07_Strategy_Enhancements_Sensitivity.ipynb    | 07 | Realism overlays: min-hold, vol sizing, stop-loss |
-| 08_Hybrid_Attention_Allocation.ipynb          | 08 | Attention-driven dynamic asset allocation         |
-
 
 ## Highlight: Attention-Based Allocation
 This framework goes beyond signal generation — it shows how attention weights can be used for **interpretable, dynamic asset allocation**, bypassing traditional optimizers (e.g., covariance matrix inversion). It paves the way for **explainable AI (XAI)** in portfolio construction.
@@ -157,6 +145,12 @@ Contributions are welcome! If you have ideas for improvements, please feel free 
 This project is licensed under the MIT License.
 
 
+## DISCLAIMER
+This project is intended solely for educational and research purposes.
+* It is not designed for real trading or investment use.
+* No warranties or guarantees are provided.
+* The creator bears no responsibility for any financial losses.
+By using this software, you acknowledge and agree that it is for learning purposes only.
 
 
 
