@@ -1,9 +1,5 @@
 # AI-based Trading Strategies: Comparing Deep Learning Architectures
 
-### Clean Strategy Comparison
-![Clean Strategy Comparison](presentation_assets/1_clean_strategy_comparison.png)
-
-
 
 This repository presents a structured framework for developing and evaluating AI-driven trading strategies, with a focus on **systematic risk premia**. The project integrates cutting-edge deep learning architectures with robust backtesting and interpretability tools — all within a modular and extensible research pipeline.
 
@@ -14,6 +10,9 @@ This project utilizes historical market data obtained through the **[EODHD APIs]
 
 ## Description:
 This project deploys a systematic, AI-driven framework to develop and evaluate quantitative trading strategies. Our modular pipeline integrates robust API-based data acquisition with advanced feature engineering—including regime detection via Hidden Markov Models—to produce high-quality inputs for our models. We implement a suite of deep learning architectures, including a GRU, a standalone LSTM model, and an LSTM-CNN hybrid, all validated through rolling cross-validation and realistic backtesting that incorporates transaction cost adjustments. Performance is benchmarked against a buy-and-hold baseline, and the framework supports rapid experimentation with alternative architectures such as LSTM with attention mechanisms and transformers. 
+
+### Clean Strategy Comparison
+![Clean Strategy Comparison](presentation_assets/1_clean_strategy_comparison.png)
 
 This project builds an end-to-end pipeline for evaluating deep learning models in financial markets. It includes:
 
