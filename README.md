@@ -25,6 +25,7 @@ This project builds an end-to-end pipeline for evaluating deep learning models i
 
 The final deliverable includes a strategy-ready version and a hybrid attention-based allocation prototype for future AI+XAI asset management models.
 
+![Strategy Diagnostics](presentation_assets/Deep_Dive.png)
 
 ## Neural Networks for Trading Strategies
 Neural networks (NNs) have been widely adopted in trading strategies due to their ability to model nonlinear relationships, detect patterns, and adapt to changing market conditions. The evolution of deep learning architectures, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformer-based models, has further enhanced their predictive power. NNs have revolutionized trading by enhancing prediction accuracy, optimizing execution, and identifying alpha signals in ways that traditional methods cannot. However, challenges such as interpretability, overfitting, and computational cost must be addressed for robust deployment.
@@ -94,6 +95,7 @@ AI-based-Trading-Strategies/
 ## Highlight: Attention-Based Allocation
 This framework goes beyond signal generation — it shows how attention weights can be used for **interpretable, dynamic asset allocation**, bypassing traditional optimizers (e.g., covariance matrix inversion). It paves the way for **explainable AI (XAI)** in portfolio construction.
 
+![Attention-Based Strategy](presentation_assets/Attention_based.png)
 
 
 ## Motivation
@@ -102,6 +104,8 @@ This research aims to bridge AI interpretability and portfolio realism, contribu
 - Enhanced forecasting in noisy environments
 - Smarter, cost-aware execution
 - Modular testing of AI-based allocation models
+
+![Recent Market Developments](presentation_assets/Mkts_Dev.png)
 
 ## Methodology
 ## 📌 Methodology Overview
