@@ -1,5 +1,5 @@
 # AI-based Trading Strategies: Comparing Deep Learning Architectures
-![AlIF Conference at St Edward's University in Austin, TX](presentation_assets/1st_slide.png)
+![AIIF Conference at St Edward's University in Austin, TX](presentation_assets/1st_slide.png)
 
 This repository presents a structured framework for developing and evaluating AI-driven trading strategies, with a focus on **systematic risk premia**. The project integrates cutting-edge deep learning architectures with robust backtesting and interpretability tools — all within a modular and extensible research pipeline.
 
