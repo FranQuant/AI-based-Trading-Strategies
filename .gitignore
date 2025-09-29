@@ -14,3 +14,4 @@ __pycache__/
 # Ignore env files
 .env
 
+!outputs/oos_final/equity_curve_oos_enhanced.png
