@@ -53,7 +53,10 @@ Our approach leverages a state-of-the-art deep learning architecture that combin
 
 
 ### Attention-LSTM vs SPY Benchmark
-![Attention-LSTM vs SPY Benchmark](presentation_assets/6_cumulative_performance_attention_lstm_vs_benchmark.png)
+#### Attention-LSTM OOS Results
+
+![OOS Equity Curve](https://raw.githubusercontent.com/FranQuant/AI-based-Trading-Strategies/main/outputs/04_ATT_LSTM_clean/oos_final/equity_curve_oos_enhanced.png)
+
 
 
 > Strategy performance is benchmarked with vectorbt and adjusted for transaction costs. Attention mechanisms are further analyzed for signal interpretability and allocation logic.
