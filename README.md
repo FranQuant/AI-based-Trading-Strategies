@@ -3,29 +3,9 @@
 
 This repository presents a structured framework for developing and evaluating AI-driven trading strategies, with a focus on **systematic risk premia**. The project integrates cutting-edge deep learning architectures with robust backtesting and interpretability tools — all within a modular and extensible research pipeline.
 
-
-## Data Source
-This project utilizes historical market data obtained through the **[EODHD APIs](https://eodhistoricaldata.com/financial-apis/)**. Their high-quality financial data has been instrumental in developing and testing AI-based trading strategies.
-
-
 ## Description:
 This project deploys a systematic, AI-driven framework to develop and evaluate quantitative trading strategies. Our modular pipeline integrates robust API-based data acquisition with advanced feature engineering—including regime detection via Hidden Markov Models—to produce high-quality inputs for our models. We implement a suite of deep learning architectures, including a GRU, a standalone LSTM model, and an LSTM-CNN hybrid, all validated through rolling cross-validation and realistic backtesting that incorporates transaction cost adjustments. Performance is benchmarked against a buy-and-hold baseline, and the framework supports rapid experimentation with alternative architectures such as LSTM with attention mechanisms and transformers. 
 
-### Clean Strategy Comparison
-![Clean Strategy Comparison](presentation_assets/1_clean_strategy_comparison.png)
-
-This project builds an end-to-end pipeline for evaluating deep learning models in financial markets. It includes:
-
-- **API-driven data ingestion**
-- **Feature engineering** (including regime detection using Hidden Markov Models)
-- **Multi-architecture model experimentation** (GRU, LSTM, CNN-LSTM, Attention LSTM, Transformers)
-- **Rolling-window validation and realistic backtesting**
-- **Transaction cost sensitivity, risk-adjusted metrics, and hybrid overlays**
-- **Explainability via attention weights and strategy diagnostics**
-
-The final deliverable includes a strategy-ready version and a hybrid attention-based allocation prototype for future AI+XAI asset management models.
-
-![Strategy Diagnostics](presentation_assets/Deep_Dive.png)
 
 ## Neural Networks for Trading Strategies
 Neural networks (NNs) have been widely adopted in trading strategies due to their ability to model nonlinear relationships, detect patterns, and adapt to changing market conditions. The evolution of deep learning architectures, including convolutional neural networks (CNNs), recurrent neural networks (RNNs), and transformer-based models, has further enhanced their predictive power. NNs have revolutionized trading by enhancing prediction accuracy, optimizing execution, and identifying alpha signals in ways that traditional methods cannot. However, challenges such as interpretability, overfitting, and computational cost must be addressed for robust deployment.
@@ -57,9 +37,6 @@ Our approach leverages a state-of-the-art deep learning architecture that combin
 
 ![OOS Equity Curve](https://raw.githubusercontent.com/FranQuant/AI-based-Trading-Strategies/main/outputs/04_ATT_LSTM_clean/oos_final/equity_curve_oos_enhanced.png)
 
-
-
-> Strategy performance is benchmarked with vectorbt and adjusted for transaction costs. Attention mechanisms are further analyzed for signal interpretability and allocation logic.
 
 ## Project Structure
 ```
@@ -95,12 +72,6 @@ AI-based-Trading-Strategies/
 
 ```
 
-## Highlight: Attention-Based Allocation
-This framework goes beyond signal generation — it shows how attention weights can be used for **interpretable, dynamic asset allocation**, bypassing traditional optimizers (e.g., covariance matrix inversion). It paves the way for **explainable AI (XAI)** in portfolio construction.
-
-![Attention-Based Strategy](presentation_assets/Attention_based.png)
-
-
 ## Motivation
 This research aims to bridge AI interpretability and portfolio realism, contributing to the next generation of systematic strategies:
 
@@ -114,7 +85,6 @@ This research aims to bridge AI interpretability and portfolio realism, contribu
 ## 📌 Methodology Overview
 
 1. **Data Collection & Preprocessing**  
-   - EODHD APIs for historical prices  
    - Normalization and cleaning  
    - Regime-based labeling
 
@@ -127,7 +97,7 @@ This research aims to bridge AI interpretability and portfolio realism, contribu
    - Apply overlays (stop-loss, volatility sizing, hybrid constraints)
 
 4. **Backtesting & Evaluation**  
-   - Use `vectorbt`, QuantStats, and Sharpe sensitivity  
+   - Use QuantStats, and Sharpe sensitivity  
    - Visualize performance: cumulative return, drawdown, signal frequency
 
      
