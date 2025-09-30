@@ -13,7 +13,8 @@ Neural networks (NNs) have been widely adopted in trading strategies due to thei
 Long Short-Term Memory (LSTM) networks are a specialized type of RNNs designed to handle sequential data and long-term dependencies—making them particularly well-suited for financial time-series forecasting and trading strategies. LSTMs are a powerful tool for time-series forecasting and trading, but they require careful tuning and robust validation. With recent advancements in deep learning, transformer architectures have proven highly effective in time-series forecasting, outperforming LSTMs and traditional statistical models.
 
 ### Transformer vs SPY Benchmark
-![Transformer vs SPY Benchmark](presentation_assets/6_cumulative_performance_transformer_vs_benchmark.png)
+![OOS Equity Curve — Transformer](outputs/05_TRANSFORMER/oos_final/equity_curve_oos_enhanced.png)
+
 
 Deep learning models enable systematic strategies to:
 - Capture **non-linear relationships**
