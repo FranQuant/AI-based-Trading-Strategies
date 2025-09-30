@@ -42,34 +42,35 @@ Our approach leverages a state-of-the-art deep learning architecture that combin
 ## Project Structure
 ```
 AI-based-Trading-Strategies/
-│
-├── envs/
-│   ├── env_models_simple.yml        # LSTM, GRU, CNN-LSTM
-│   ├── env_models_tf.yml            # Attention LSTM, Transformer
-│   └── env_comparison.yml           # vectorbt and reporting
-│
-├── notebooks/
-│   ├── 01_LSTM_model_template.ipynb                 # Baseline LSTM model
-│   ├── 02_GRU_model_template.ipynb                  # GRU architecture
-│   ├── 03_CNN_LSTM_model_template.ipynb             # CNN-LSTM hybrid
-│   ├── 04_ATT_LSTM_model_template.ipynb             # LSTM with attention layer
-│   ├── 04_ATT_LSTM_model_attention_weights.ipynb    # Attention score extraction
-│   ├── 05_Transformer_model_template.ipynb          # Transformer-based forecaster
-│   ├── 06_Full_Strategy_Clean_Baseline.ipynb        # vectorbt backtesting pipeline
-│   ├── 07_Strategy_Enhancements_Sensitivity.ipynb   # Realism overlays: min-hold, vol sizing, stop-loss
-│   └── 08_Hybrid_Attention_Allocation.ipynb         # Attention-driven dynamic asset allocation
-│
 ├── data/
-│   ├── df_lstm.csv
-│   ├── df_gru.csv
-│   ├── df_cnn.csv
-│   ├── df_att.csv
-│   ├── df_trans.csv
 │   └── GSPC_fixed.csv
 │
+├── envs/
+│   └── env_models_tf2.yml
+│
+├── notebooks/
+│   ├── 1_stacked_lstm.ipynb
+│   ├── 2_gru.ipynb
+│   ├── 3_cnn_lstm.ipynb
+│   ├── 4_attention_lstm.ipynb
+│   └── 5_transformer.ipynb
+│
+├── outputs/
+│   ├── 04_ATT_LSTM_clean/
+│   │   └── oos_final/
+│   │       └── equity_curve_oos_enhanced.png
+│   └── 05_TRANSFORMER/
+│       └── oos_final/
+│           └── equity_curve_oos_enhanced.png
+│
+├── presentation_assets/
+│   ├── 1st_slide.png
+│   ├── AIFC 2025.pdf
+│   └── Mkts_Dev.png
+│
+├── .gitignore
 ├── README.md
-├── requirements.txt
-└── .gitignore
+└── requirements.txt
 
 ```
 
