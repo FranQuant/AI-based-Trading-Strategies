@@ -87,7 +87,7 @@ This research aims to bridge AI interpretability and portfolio realism, contribu
 
 1. **Data Collection & Preprocessing**  
    - Normalization and cleaning  
-   - Regime-based labeling
+   - Binary labeling based on rolling returns and volatility; regime detection features were tested but removed in final pipeline
 
 2. **Model Development**  
    - Model training (LSTM, GRU, CNN-LSTM, etc.)  
