@@ -1,4 +1,4 @@
-#Ignore Python-related
+# Ignore Python-related
 __pycache__/
 *.py[cod]
 
@@ -14,4 +14,13 @@ __pycache__/
 # Ignore env files
 .env
 
-!outputs/oos_final/equity_curve_oos_enhanced.png
+# Ignore model outputs and artifacts
+outputs/**/*.npy
+outputs/**/*.csv
+outputs/**/*.png
+
+# Keep final equity curves for README
+!outputs/**/oos_final/equity_curve_oos_enhanced.png
+
+# Ignore temp dirs
+six/
